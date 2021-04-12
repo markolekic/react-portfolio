@@ -1,0 +1,12 @@
+
+@import './styles/config';
+@import './styles/mixins';
+
+
+@import './styles/bigimage';
+@import './styles/buttons';
+@import './styles/header';
+
+body{
+    background-color:$grey;
+}

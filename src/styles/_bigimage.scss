@@ -1,0 +1,36 @@
+.container {
+    position: relative;
+    width: $container-width;
+    max-width: 100%;
+    padding: 0 25px 0 25px;
+    margin: 0 auto;
+
+    img {
+        max-width: 100%;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+
+    .introduction-box {
+        position: absolute;
+        bottom: 0;
+        width: 50%;
+        background-color: $grey;
+        padding: 25px 25px 25px 0;
+        border-top-right-radius: 5px;
+
+        h1 {
+            padding-bottom: 25px;
+        }
+    }
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 40px; 
+}
+
+.about-btn {
+    background-color: #23394B;
+    color: #fff;
+}

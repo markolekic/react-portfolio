@@ -1,0 +1,38 @@
+//Breakpoints
+
+@mixin breakpoint($point) {
+    @if $point==smallDevice {
+        @media screen and (max-width:576px) {
+            @content;
+        }
+    }
+
+    @else if $point==mediumDevice {
+        @media screen and (max-width:768px) {
+            @content;
+        }
+    }
+
+    @else if $point==largeDevice {
+        @media screen and (max-width:992px) {
+            @content;
+        }
+    }
+
+    @else if $point==desktop {
+        @media screen and (max-width: 1200px) {
+            @content;
+        }
+    }
+}
+
+//Position Mixins
+
+@mixin aspect-correction {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+}

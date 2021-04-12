@@ -1,0 +1,92 @@
+.container-fluid {
+    padding: 15px 0 15px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        align-items: center;
+
+        @include breakpoint(mediumDevice) {
+           flex-direction: column;
+        }
+
+        .logo-img {
+            width: 40px;
+        }
+
+        .link-wrapper {
+            @include breakpoint(mediumDevice) {
+                display: none;
+             }
+        }
+    }
+
+    .link-list {
+        display: flex;
+
+        .link-item {
+            padding-left: 50px;
+        }
+    }
+}
+
+nav .navbar-toggler {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    //Toggler
+    nav ul.open {
+        max-height: 100vh;
+    }
+
+    nav .navbar-toggler {
+        display: block;
+        position: absolute;
+        height: 40px;
+        top: 5px;
+        right: 20px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        padding: 0 5px;
+        cursor: pointer;
+    }
+
+    nav .navbar-toggler span,
+    nav .navbar-toggler span::before,
+    nav .navbar-toggler span::after {
+        display: block;
+        content: '';
+        background-color: black;
+        height: 3px;
+        width: 50px;
+        border-radius: 4px;
+        transition: all ease-in-out 0.3s;
+    }
+
+    nav .navbar-toggler span::before {
+        transform: translateY(-8px);
+    }
+
+    nav .navbar-toggler span::after {
+        transform: translateY(5px);
+    }
+
+    nav .navbar-toggler.open-navbar-toggler span {
+        /* transform: rotate(90deg); */
+        background-color: transparent;
+        /* transform: scale(0.85) rotate(270deg); */
+    }
+
+    nav .navbar-toggler.open-navbar-toggler span::before {
+        transform: translateY(0px) rotate(45deg);
+        /* transform: translateY(0px) scale(0.75) rotate(45deg); */
+    }
+
+    nav .navbar-toggler.open-navbar-toggler span::after {
+        transform: translateY(-3px) rotate(-45deg);
+        /* transform: translateY(-3px) scale(0.75) rotate(-45deg); */
+    }
+}
