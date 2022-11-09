@@ -3,6 +3,7 @@ import { Button, ButtonLink } from "../ButtonElements";
 import { BsThreeDots } from "react-icons/bs";
 import { ProjectContainer, ProjectsWrapper, ProjectInfo, ProjectTitle, ProjectDescription, IconsWrapper, ProjectBtnWrapper, ProjectLink, ProjectImage, Image, Icon, MoreProjects, ToolTip } from "./ProjectElements";
 import { projectsData } from "./Data";
+import { aboutInfo } from "../AboutSection/Data"
 
 const ProjectsSection = ({ id }) => {
   return (
@@ -39,7 +40,7 @@ const ProjectsSection = ({ id }) => {
         );
       })}
       <ToolTip>
-        <MoreProjects href='https://www.google.com' target='_blank'>
+        <MoreProjects href={aboutInfo.resume} target='_blank'>
           <BsThreeDots />
         </MoreProjects>
       </ToolTip>

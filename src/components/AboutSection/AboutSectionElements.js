@@ -6,6 +6,11 @@ export const AboutContainer = styled.div`
 
   @media screen and (max-width: 1100px) {
     padding: 0 40px;
+    margin: 15px auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
   }
 `;
 

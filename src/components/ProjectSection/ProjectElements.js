@@ -15,6 +15,7 @@ export const ProjectsWrapper = styled.div`
 
   @media screen and (max-width: 992px) {
     flex-direction: column;
+    padding: 15px 0;
   }
 `;
 

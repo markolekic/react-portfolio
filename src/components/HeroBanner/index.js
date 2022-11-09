@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { ButtonScroll } from "../ButtonElements";
+import { FaCaretDown } from "react-icons/fa";
 import { HeroContainer, ImgWrapper, ImgBg, HeroContent, HeroH1, HeroBtnWrapper } from "./HeroBannerElements";
 import Image from "../../images/image.jpg";
-import { FaCaretDown } from "react-icons/fa";
 
 const HeroBanner = () => {
   const [hover, setHover] = useState(false);

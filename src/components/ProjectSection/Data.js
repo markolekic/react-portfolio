@@ -8,7 +8,7 @@ export const projectsData = [
   {
     id: 1,
     title: "Photographer website",
-    description: "This is the first project that I worked on. On this landing page I used Bootstrap with a little of jQuery. I Used jQuery plug-in Ekko-Lightbox for the photo gallery.",
+    description: "This is the first project that I worked on during first months of learning FE. On this landing page I used Bootstrap with a little of jQuery. I Used jQuery plug-in Ekko-Lightbox for the photo gallery.",
     sourceLink: "https://github.com/markolekic/jeleninSajt",
     appLink: "https://markolekic.github.io/jeleninSajt/",
     image: require("../../images/project-1.jpg"),
@@ -29,8 +29,8 @@ export const projectsData = [
   {
     id: 2,
     title: "Portfolio page",
-    description: "The idea was to build a minimalistic portfolio page. On this project, I used React with Styled components. AOS (Animate on Scroll Library) for Fade scroll effects.",
-    sourceLink: "https://github.com/markolekic/portfolio",
+    description: "The idea was to build a minimalistic portfolio page. On this project, I used React with Styled components.",
+    sourceLink: "https://github.com/markolekic/react-portfolio",
     appLink: "https://markolekic.net",
     image: require("../../images/project-2.jpg"),
     imageAlt: "Portfolio site",
@@ -75,7 +75,7 @@ export const projectsData = [
   {
     id: 4,
     title: "Favorite albums",
-    description: "Classes and localStorage are used in this simple application. You can add your favorite band and album name. When the page is refreshed, it saved value in localStorage and displayed on a page.",
+    description: "Classes and localStorage are used in this simple application. You can add your favorite band and album name. Value is saved in localStorage and displayed on a page.",
     sourceLink: "https://github.com/markolekic/favAlbum",
     appLink: "https://markolekic.github.io/favAlbum/",
     image: require("../../images/project-4.jpg"),
@@ -100,7 +100,7 @@ export const projectsData = [
     sourceLink: "https://github.com/markolekic/search-videos-react",
     appLink: "https://markolekic.github.io/search-videos-react/",
     image: require("../../images/project-5.jpg"),
-    imageAlt: "Favorite albums",
+    imageAlt: "Video search site",
     imgStart: false,
     color: "#C9C3D1",
     techStack: [
@@ -121,7 +121,7 @@ export const projectsData = [
     sourceLink: "https://github.com/markolekic/search-mk-fighters",
     appLink: "https://markolekic.github.io/search-mk-fighters/",
     image: require("../../images/project-6.jpg"),
-    imageAlt: "Favorite albums",
+    imageAlt: "MK app",
     imgStart: true,
     color: "#EDE0C3",
     techStack: [
